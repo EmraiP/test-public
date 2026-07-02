@@ -1,0 +1,1412 @@
+/* Add font files for Strelka */
+@font-face {
+  font-family: 'Strelka';
+  src: url('fonts/strelka.woff2') format('woff2'),
+       url('fonts/strelka.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-family-strelka: 'Strelka', sans-serif;
+  --font-family-roboto: 'Roboto', sans-serif;
+  --HitBox: rgba(255, 255, 255, 9.999999974752427e-7);
+  --Accent: rgba(255, 64, 0, 1);
+  --Theme/Primary: rgba(255, 170, 0, 1);
+  --Theme/Secondary: rgba(108, 117, 125, 1);
+  --Theme/Success: rgba(25, 135, 84, 1);
+  --Theme/Danger: rgba(220, 53, 69, 1);
+  --Theme/Warning: rgba(255, 193, 7, 1);
+  --Theme/Info: rgba(13, 202, 240, 1);
+  --Theme/Light: rgba(248, 249, 250, 1);
+  --Theme/Dark: rgba(33, 37, 41, 1);
+  --Theme/Border: rgba(222, 226, 230, 1);
+  --Theme/Body Background: rgba(255, 255, 255, 1);
+  --Body Text/Body Color: rgba(33, 37, 41, 1);
+  --Gray/White: rgba(255, 255, 255, 1);
+  --Gray/100: rgba(248, 249, 250, 1);
+  --Gray/200: rgba(233, 236, 239, 1);
+  --Gray/300: rgba(222, 226, 230, 1);
+  --Gray/400: rgba(206, 212, 218, 1);
+  --Gray/500: rgba(173, 181, 189, 1);
+  --Gray/600: rgba(108, 117, 125, 1);
+  --Gray/700: rgba(73, 80, 87, 1);
+  --Gray/800: rgba(52, 58, 64, 1);
+  --Gray/900: rgba(33, 37, 41, 1);
+  --Gray/Black: rgba(0, 0, 0, 1);
+  --Blue/100: rgba(231, 241, 255, 1);
+  --Blue/200: rgba(158, 197, 254, 1);
+  --Blue/300: rgba(110, 168, 254, 1);
+  --Blue/400: rgba(61, 139, 253, 1);
+  --Blue/500: rgba(13, 110, 253, 1);
+  --Blue/600: rgba(10, 88, 202, 1);
+  --Blue/700: rgba(8, 66, 152, 1);
+  --Blue/800: rgba(5, 44, 101, 1);
+  --Blue/900: rgba(3, 22, 51, 1);
+  --Indigo/100: rgba(224, 207, 252, 1);
+  --Indigo/200: rgba(194, 159, 250, 1);
+  --Indigo/300: rgba(163, 112, 247, 1);
+  --Indigo/400: rgba(133, 64, 245, 1);
+  --Indigo/500: rgba(102, 16, 242, 1);
+  --Indigo/600: rgba(82, 13, 194, 1);
+  --Indigo/700: rgba(61, 10, 145, 1);
+  --Indigo/800: rgba(41, 6, 97, 1);
+  --Indigo/900: rgba(20, 3, 48, 1);
+  --Purple/100: rgba(226, 217, 243, 1);
+  --Purple/200: rgba(197, 179, 230, 1);
+  --Purple/300: rgba(169, 142, 218, 1);
+  --Purple/400: rgba(140, 104, 205, 1);
+  --Purple/500: rgba(111, 66, 193, 1);
+  --Purple/600: rgba(89, 53, 154, 1);
+  --Purple/700: rgba(67, 40, 116, 1);
+  --Purple/800: rgba(44, 26, 77, 1);
+  --Purple/900: rgba(22, 13, 39, 1);
+  --Pink/100: rgba(247, 214, 230, 1);
+  --Pink/200: rgba(239, 173, 206, 1);
+  --Pink/300: rgba(230, 133, 181, 1);
+  --Pink/400: rgba(222, 92, 157, 1);
+  --Pink/500: rgba(214, 51, 132, 1);
+  --Pink/600: rgba(171, 41, 106, 1);
+  --Pink/700: rgba(128, 31, 79, 1);
+  --Pink/800: rgba(86, 20, 53, 1);
+  --Pink/900: rgba(43, 10, 26, 1);
+  --Red/100: rgba(248, 215, 218, 1);
+  --Red/200: rgba(241, 174, 181, 1);
+  --Red/300: rgba(234, 134, 143, 1);
+  --Red/400: rgba(227, 93, 106, 1);
+  --Red/500: rgba(220, 53, 69, 1);
+  --Red/600: rgba(176, 42, 55, 1);
+  --Red/700: rgba(132, 32, 41, 1);
+  --Red/800: rgba(88, 21, 28, 1);
+  --Red/900: rgba(44, 11, 14, 1);
+  --Orange/100: rgba(255, 229, 208, 1);
+  --Orange/200: rgba(254, 203, 161, 1);
+  --Orange/300: rgba(254, 178, 114, 1);
+  --Orange/400: rgba(253, 152, 67, 1);
+  --Orange/500: rgba(253, 126, 20, 1);
+  --Orange/600: rgba(202, 101, 16, 1);
+  --Orange/700: rgba(152, 76, 12, 1);
+  --Orange/800: rgba(101, 50, 8, 1);
+  --Orange/900: rgba(51, 25, 4, 1);
+  --Yellow/100: rgba(255, 243, 205, 1);
+  --Yellow/200: rgba(255, 230, 156, 1);
+  --Yellow/300: rgba(255, 218, 106, 1);
+  --Yellow/400: rgba(255, 205, 57, 1);
+  --Yellow/500: rgba(255, 193, 7, 1);
+  --Yellow/600: rgba(204, 154, 6, 1);
+  --Yellow/700: rgba(153, 116, 4, 1);
+  --Yellow/800: rgba(102, 77, 3, 1);
+  --Yellow/900: rgba(51, 39, 1, 1);
+  --Green/100: rgba(209, 231, 221, 1);
+  --Green/200: rgba(163, 207, 187, 1);
+  --Green/300: rgba(117, 183, 152, 1);
+  --Green/400: rgba(71, 159, 118, 1);
+  --Green/500: rgba(25, 135, 84, 1);
+  --Green/600: rgba(20, 108, 67, 1);
+  --Green/700: rgba(15, 81, 50, 1);
+  --Green/800: rgba(10, 54, 34, 1);
+  --Green/900: rgba(5, 27, 17, 1);
+  --Teal/100: rgba(210, 244, 234, 1);
+  --Teal/200: rgba(166, 233, 213, 1);
+  --Teal/300: rgba(121, 223, 193, 1);
+  --Teal/400: rgba(77, 212, 172, 1);
+  --Teal/500: rgba(32, 201, 151, 1);
+  --Teal/600: rgba(26, 161, 121, 1);
+  --Teal/700: rgba(19, 121, 91, 1);
+  --Teal/800: rgba(13, 80, 60, 1);
+  --Teal/900: rgba(6, 40, 30, 1);
+  --Cyan/100: rgba(207, 244, 252, 1);
+  --Cyan/200: rgba(158, 234, 249, 1);
+  --Cyan/300: rgba(110, 223, 246, 1);
+  --Cyan/400: rgba(61, 213, 243, 1);
+  --Cyan/500: rgba(13, 202, 240, 1);
+  --Cyan/600: rgba(10, 162, 192, 1);
+  --Cyan/700: rgba(8, 121, 144, 1);
+  --Cyan/800: rgba(5, 81, 96, 1);
+  --Cyan/900: rgba(3, 40, 48, 1);
+  --Placeholder/Image: rgba(248, 249, 250, 1);
+  --Placeholder/Avatar: rgba(255, 255, 255, 1);
+  --Components/Accordion/Active Item Header Background: rgba(207, 226, 255, 1);
+  --Components/Accordion/Active Item Header Text Color: rgba(12, 99, 228, 1);
+  --Components/Accordion/Active Header Text: rgba(5, 44, 101, 1);
+  --Components/Alert/Primary/Text: rgba(5, 44, 101, 1);
+  --Components/Alert/Primary/Background: rgba(207, 226, 255, 1);
+  --Components/Alert/Primary/Border: rgba(158, 197, 254, 1);
+  --Components/Alert/Primary/Link: rgba(5, 44, 101, 1);
+  --Components/Alert/Secondary/Text: rgba(43, 47, 50, 1);
+  --Components/Alert/Secondary/Background: rgba(226, 227, 229, 1);
+  --Components/Alert/Secondary/Border: rgba(196, 200, 203, 1);
+  --Components/Alert/Secondary/Link: rgba(52, 56, 60, 1);
+  --Components/Alert/Success/Text: rgba(10, 54, 34, 1);
+  --Components/Alert/Success/Background: rgba(209, 231, 221, 1);
+  --Components/Alert/Success/Border: rgba(163, 207, 187, 1);
+  --Components/Alert/Success/Link: rgba(10, 54, 34, 1);
+  --Components/Alert/Danger/Text: rgba(88, 21, 28, 1);
+  --Components/Alert/Danger/Background: rgba(248, 215, 218, 1);
+  --Components/Alert/Danger/Border: rgba(241, 174, 181, 1);
+  --Components/Alert/Danger/Link: rgba(88, 21, 28, 1);
+  --Components/Alert/Warning/Text: rgba(102, 77, 3, 1);
+  --Components/Alert/Warning/Background: rgba(255, 243, 205, 1);
+  --Components/Alert/Warning/Border: rgba(255, 230, 156, 1);
+  --Components/Alert/Warning/Link: rgba(102, 77, 3, 1);
+  --Components/Alert/Info/Text: rgba(5, 81, 96, 1);
+  --Components/Alert/Info/Background: rgba(207, 244, 252, 1);
+  --Components/Alert/Info/Border: rgba(158, 234, 249, 1);
+  --Components/Alert/Info/Link: rgba(5, 81, 96, 1);
+  --Components/Alert/Light/Text: rgba(73, 80, 87, 1);
+  --Components/Alert/Light/Background: rgba(252, 252, 253, 1);
+  --Components/Alert/Light/Border: rgba(233, 236, 239, 1);
+  --Components/Alert/Light/Link: rgba(73, 80, 87, 1);
+  --Components/Alert/Dark/Text: rgba(73, 80, 87, 1);
+  --Components/Alert/Dark/Background: rgba(206, 212, 218, 1);
+  --Components/Alert/Dark/Border: rgba(173, 181, 189, 1);
+  --Components/Alert/Dark/Link: rgba(73, 80, 87, 1);
+  --Components/Button/Primary/Hovered Background: rgba(11, 94, 215, 1);
+  --Components/Button/Primary/Hovered Border: rgba(10, 88, 202, 1);
+  --Components/Button/Primary/Active Background: rgba(10, 88, 202, 1);
+  --Components/Button/Primary/Active Border: rgba(10, 83, 190, 1);
+  --Components/Button/Secondary/Hovered Background: rgba(92, 99, 106, 1);
+  --Components/Button/Secondary/Hovered Border: rgba(86, 94, 100, 1);
+  --Components/Button/Secondary/Active Background: rgba(86, 94, 100, 1);
+  --Components/Button/Secondary/Active Border: rgba(81, 88, 94, 1);
+  --Components/Button/Success/Hovered Background: rgba(21, 115, 71, 1);
+  --Components/Button/Success/Hovered Border: rgba(20, 108, 67, 1);
+  --Components/Button/Success/Active Background: rgba(20, 108, 67, 1);
+  --Components/Button/Success/Active Border: rgba(19, 101, 63, 1);
+  --Components/Button/Danger/Hovered Background: rgba(187, 45, 59, 1);
+  --Components/Button/Danger/Hovered Border: rgba(176, 42, 55, 1);
+  --Components/Button/Danger/Active Background: rgba(176, 42, 55, 1);
+  --Components/Button/Danger/Active Border: rgba(165, 40, 52, 1);
+  --Components/Button/Warning/Hovered Background: rgba(255, 202, 44, 1);
+  --Components/Button/Warning/Hovered Border: rgba(255, 199, 32, 1);
+  --Components/Button/Warning/Active Background: rgba(255, 205, 57, 1);
+  --Components/Button/Warning/Active Border: rgba(255, 199, 32, 1);
+  --Components/Button/Info/Hovered Background: rgba(49, 210, 242, 1);
+  --Components/Button/Info/Hovered Border: rgba(37, 207, 242, 1);
+  --Components/Button/Info/Active Background: rgba(61, 213, 243, 1);
+  --Components/Button/Info/Active Border: rgba(37, 207, 242, 1);
+  --Components/Button/Light/Hovered Background: rgba(211, 212, 213, 1);
+  --Components/Button/Light/Hovered Border: rgba(198, 199, 200, 1);
+  --Components/Button/Light/Active Background: rgba(198, 199, 200, 1);
+  --Components/Button/Light/Active Border: rgba(186, 187, 188, 1);
+  --Components/Button/Dark/Hovered Background: rgba(28, 31, 35, 1);
+  --Components/Button/Dark/Hovered Border: rgba(26, 30, 33, 1);
+  --Components/Button/Dark/Active Background: rgba(26, 30, 33, 1);
+  --Components/Button/Dark/Active Border: rgba(25, 28, 31, 1);
+  --Components/Button/Link/Hovered Text: rgba(10, 88, 202, 1);
+  --Components/Callout/Info/Text: rgba(5, 81, 96, 1);
+  --Components/Callout/Info/Background: rgba(207, 244, 252, 1);
+  --Components/Callout/Info/Border: rgba(158, 234, 249, 1);
+  --Components/Callout/Warning/Text: rgba(102, 77, 3, 1);
+  --Components/Callout/Warning/Background: rgba(255, 243, 205, 1);
+  --Components/Callout/Warning/Border: rgba(255, 230, 156, 1);
+  --Components/Callout/Danger/Text: rgba(88, 21, 28, 1);
+  --Components/Callout/Danger/Background: rgba(248, 215, 218, 1);
+  --Components/Callout/Danger/Border: rgba(241, 174, 181, 1);
+  --Components/Card/Border: rgba(0, 0, 0, 0.1764705926179886);
+  --Components/Card/Caption Background: rgba(0, 0, 0, 0.029999999329447746);
+  --Components/Dropdowns/Border: rgba(0, 0, 0, 0.15000000596046448);
+  --Components/Dropdowns/Item Active Text: rgba(255, 255, 255, 1);
+  --Components/Dropdowns/Divider: rgba(0, 0, 0, 0.1764705926179886);
+  --Components/Dropdowns/Dark/Hovered Item Background: rgba(255, 255, 255, 0.15000000596046448);
+  --Components/Dropdowns/Dark/Disabled Text: rgba(173, 181, 189, 0.501960813999176);
+  --Components/Dropdowns/Light/Hovered Item Background: rgba(248, 249, 250, 1);
+  --Components/Dropdowns/Light/Disabled Text: rgba(33, 37, 41, 0.501960813999176);
+  --Components/Divider/Divider Background: rgba(33, 37, 41, 0.25);
+  --Components/List group/Item Border: rgba(222, 226, 230, 1);
+  --Components/List group/Item Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Item Pressed Background: rgba(233, 236, 239, 1);
+  --Components/List group/Default/Default/Default Text: rgba(33, 37, 41, 1);
+  --Components/List group/Default/Default/Default Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Default/Default Border: rgba(222, 226, 230, 1);
+  --Components/List group/Default/Default/Active Text: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Default/Active Background: rgba(13, 110, 253, 1);
+  --Components/List group/Default/Default/Active Border: rgba(13, 110, 253, 1);
+  --Components/List group/Default/Default/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Default/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Primary/Default Text: rgba(5, 44, 101, 1);
+  --Components/List group/Default/Primary/Default Background: rgba(207, 226, 255, 1);
+  --Components/List group/Default/Primary/Default Border: rgba(158, 197, 254, 1);
+  --Components/List group/Default/Primary/Active Text: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Primary/Active Background: rgba(13, 110, 253, 1);
+  --Components/List group/Default/Primary/Active Border: rgba(13, 110, 253, 1);
+  --Components/List group/Default/Primary/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Primary/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Secondary/Default Text: rgba(43, 47, 50, 1);
+  --Components/List group/Default/Secondary/Default Background: rgba(226, 227, 229, 1);
+  --Components/List group/Default/Secondary/Default Border: rgba(196, 200, 203, 1);
+  --Components/List group/Default/Secondary/Active Text: rgba(226, 227, 229, 1);
+  --Components/List group/Default/Secondary/Active Background: rgba(43, 47, 50, 1);
+  --Components/List group/Default/Secondary/Active Border: rgba(43, 47, 50, 1);
+  --Components/List group/Default/Secondary/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Secondary/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Success/Default Text: rgba(10, 54, 34, 1);
+  --Components/List group/Default/Success/Default Background: rgba(209, 231, 221, 1);
+  --Components/List group/Default/Success/Default Border: rgba(163, 207, 187, 1);
+  --Components/List group/Default/Success/Active Text: rgba(209, 231, 221, 1);
+  --Components/List group/Default/Success/Active Background: rgba(10, 54, 34, 1);
+  --Components/List group/Default/Success/Active Border: rgba(10, 54, 34, 1);
+  --Components/List group/Default/Success/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Success/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Danger/Default Text: rgba(88, 21, 28, 1);
+  --Components/List group/Default/Danger/Default Background: rgba(248, 215, 218, 1);
+  --Components/List group/Default/Danger/Default Border: rgba(241, 174, 181, 1);
+  --Components/List group/Default/Danger/Active Text: rgba(248, 215, 218, 1);
+  --Components/List group/Default/Danger/Active Background: rgba(88, 21, 28, 1);
+  --Components/List group/Default/Danger/Active Border: rgba(88, 21, 28, 1);
+  --Components/List group/Default/Danger/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Danger/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Warning/Default Text: rgba(102, 77, 3, 1);
+  --Components/List group/Default/Warning/Default Background: rgba(255, 243, 205, 1);
+  --Components/List group/Default/Warning/Default Border: rgba(255, 230, 156, 1);
+  --Components/List group/Default/Warning/Active Text: rgba(255, 243, 205, 1);
+  --Components/List group/Default/Warning/Active Background: rgba(102, 77, 3, 1);
+  --Components/List group/Default/Warning/Active Border: rgba(102, 77, 3, 1);
+  --Components/List group/Default/Warning/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Warning/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Info/Default Text: rgba(5, 81, 96, 1);
+  --Components/List group/Default/Info/Default Background: rgba(207, 244, 252, 1);
+  --Components/List group/Default/Info/Default Border: rgba(158, 234, 249, 1);
+  --Components/List group/Default/Info/Active Text: rgba(207, 244, 252, 1);
+  --Components/List group/Default/Info/Active Background: rgba(5, 81, 96, 1);
+  --Components/List group/Default/Info/Active Border: rgba(5, 81, 96, 1);
+  --Components/List group/Default/Info/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Info/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Light/Default Text: rgba(73, 80, 87, 1);
+  --Components/List group/Default/Light/Default Background: rgba(252, 252, 253, 1);
+  --Components/List group/Default/Light/Default Border: rgba(233, 236, 239, 1);
+  --Components/List group/Default/Light/Active Text: rgba(252, 252, 253, 1);
+  --Components/List group/Default/Light/Active Background: rgba(73, 80, 87, 1);
+  --Components/List group/Default/Light/Active Border: rgba(73, 80, 87, 1);
+  --Components/List group/Default/Light/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Light/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Default/Dark/Default Text: rgba(73, 80, 87, 1);
+  --Components/List group/Default/Dark/Default Background: rgba(206, 212, 218, 1);
+  --Components/List group/Default/Dark/Default Border: rgba(173, 181, 189, 1);
+  --Components/List group/Default/Dark/Active Text: rgba(206, 212, 218, 1);
+  --Components/List group/Default/Dark/Active Background: rgba(73, 80, 87, 1);
+  --Components/List group/Default/Dark/Active Border: rgba(73, 80, 87, 1);
+  --Components/List group/Default/Dark/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Default/Dark/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Default/Default Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Default/Default Border: rgba(222, 226, 230, 1);
+  --Components/List group/Action/Default/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Default/Hovered Background: rgba(248, 249, 250, 1);
+  --Components/List group/Action/Default/Active Text: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Default/Active Background: rgba(13, 110, 253, 1);
+  --Components/List group/Action/Default/Active Border: rgba(13, 110, 253, 1);
+  --Components/List group/Action/Default/Disabled Text: rgba(33, 37, 41, 1);
+  --Components/List group/Action/Default/Disabled Background: rgba(233, 236, 239, 1);
+  --Components/List group/Action/Primary/Default Background: rgba(207, 226, 255, 1);
+  --Components/List group/Action/Primary/Default Border: rgba(158, 197, 254, 1);
+  --Components/List group/Action/Primary/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Primary/Hovered Background: rgba(158, 197, 254, 1);
+  --Components/List group/Action/Primary/Pressed Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Primary/Pressed Background: rgba(158, 197, 254, 1);
+  --Components/List group/Action/Primary/Active Text: rgba(207, 226, 255, 1);
+  --Components/List group/Action/Primary/Active Background: rgba(5, 44, 101, 1);
+  --Components/List group/Action/Primary/Active Border: rgba(5, 44, 101, 1);
+  --Components/List group/Action/Primary/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Primary/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Secondary/Default Background: rgba(226, 227, 229, 1);
+  --Components/List group/Action/Secondary/Default Border: rgba(196, 200, 203, 1);
+  --Components/List group/Action/Secondary/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Secondary/Hovered Background: rgba(196, 200, 203, 1);
+  --Components/List group/Action/Secondary/Pressed Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Secondary/Pressed Background: rgba(196, 200, 203, 1);
+  --Components/List group/Action/Secondary/Active Text: rgba(226, 227, 229, 1);
+  --Components/List group/Action/Secondary/Active Background: rgba(43, 47, 50, 1);
+  --Components/List group/Action/Secondary/Active Border: rgba(43, 47, 50, 1);
+  --Components/List group/Action/Secondary/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Secondary/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Success/Default Background: rgba(209, 231, 221, 1);
+  --Components/List group/Action/Success/Default Border: rgba(163, 207, 187, 1);
+  --Components/List group/Action/Success/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Success/Hovered Background: rgba(163, 207, 187, 1);
+  --Components/List group/Action/Success/Pressed Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Success/Pressed Background: rgba(163, 207, 187, 1);
+  --Components/List group/Action/Success/Active Text: rgba(209, 231, 221, 1);
+  --Components/List group/Action/Success/Active Background: rgba(10, 54, 34, 1);
+  --Components/List group/Action/Success/Active Border: rgba(10, 54, 34, 1);
+  --Components/List group/Action/Success/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Success/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Danger/Default Background: rgba(248, 215, 218, 1);
+  --Components/List group/Action/Danger/Default Border: rgba(241, 174, 181, 1);
+  --Components/List group/Action/Danger/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Danger/Hovered Background: rgba(241, 174, 181, 1);
+  --Components/List group/Action/Danger/Pressed Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Danger/Pressed Background: rgba(241, 174, 181, 1);
+  --Components/List group/Action/Danger/Active Text: rgba(248, 215, 218, 1);
+  --Components/List group/Action/Danger/Active Background: rgba(88, 21, 28, 1);
+  --Components/List group/Action/Danger/Active Border: rgba(88, 21, 28, 1);
+  --Components/List group/Action/Danger/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Danger/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Warning/Default Background: rgba(255, 243, 205, 1);
+  --Components/List group/Action/Warning/Default Border: rgba(255, 230, 156, 1);
+  --Components/List group/Action/Warning/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Warning/Hovered Background: rgba(255, 230, 156, 1);
+  --Components/List group/Action/Warning/Pressed Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Warning/Pressed Background: rgba(255, 230, 156, 1);
+  --Components/List group/Action/Warning/Active Text: rgba(255, 243, 205, 1);
+  --Components/List group/Action/Warning/Active Background: rgba(102, 77, 3, 1);
+  --Components/List group/Action/Warning/Active Border: rgba(102, 77, 3, 1);
+  --Components/List group/Action/Warning/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Warning/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Info/Default Background: rgba(207, 244, 252, 1);
+  --Components/List group/Action/Info/Default Border: rgba(158, 234, 249, 1);
+  --Components/List group/Action/Info/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Info/Hovered Background: rgba(158, 234, 249, 1);
+  --Components/List group/Action/Info/Pressed Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Info/Pressed Background: rgba(158, 234, 249, 1);
+  --Components/List group/Action/Info/Active Text: rgba(207, 244, 252, 1);
+  --Components/List group/Action/Info/Active Background: rgba(5, 81, 96, 1);
+  --Components/List group/Action/Info/Active Border: rgba(5, 81, 96, 1);
+  --Components/List group/Action/Info/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Info/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Light/Default Background: rgba(252, 252, 253, 1);
+  --Components/List group/Action/Light/Default Border: rgba(233, 236, 239, 1);
+  --Components/List group/Action/Light/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Light/Hovered Background: rgba(233, 236, 239, 1);
+  --Components/List group/Action/Light/Pressed Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Light/Pressed Background: rgba(233, 236, 239, 1);
+  --Components/List group/Action/Light/Active Text: rgba(252, 252, 253, 1);
+  --Components/List group/Action/Light/Active Background: rgba(73, 80, 87, 1);
+  --Components/List group/Action/Light/Active Border: rgba(73, 80, 87, 1);
+  --Components/List group/Action/Light/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Light/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/List group/Action/Dark/Default Background: rgba(206, 212, 218, 1);
+  --Components/List group/Action/Dark/Default Border: rgba(173, 181, 189, 1);
+  --Components/List group/Action/Dark/Hovered Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Dark/Hovered Background: rgba(173, 181, 189, 1);
+  --Components/List group/Action/Dark/Pressed Text: rgba(0, 0, 0, 1);
+  --Components/List group/Action/Dark/Pressed Background: rgba(173, 181, 189, 1);
+  --Components/List group/Action/Dark/Active Text: rgba(206, 212, 218, 1);
+  --Components/List group/Action/Dark/Active Background: rgba(73, 80, 87, 1);
+  --Components/List group/Action/Dark/Active Border: rgba(73, 80, 87, 1);
+  --Components/List group/Action/Dark/Disabled Text: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/List group/Action/Dark/Disabled Background: rgba(255, 255, 255, 1);
+  --Components/Modal/Border: rgba(0, 0, 0, 0.17000000178813934);
+  --Components/Navs & Tabs/Light - Link: rgba(0, 0, 0, 0.550000011920929);
+  --Components/Navs & Tabs/Light - Link Hovered: rgba(0, 0, 0, 0.699999988079071);
+  --Components/Navs & Tabs/Light - Link Active: rgba(0, 0, 0, 0.8999999761581421);
+  --Components/Navs & Tabs/Light - Link Disabled: rgba(0, 0, 0, 0.30000001192092896);
+  --Components/Navs & Tabs/Light - Toggle Border: rgba(0, 0, 0, 0.10000000149011612);
+  --Components/Navs & Tabs/Dark - Link: rgba(255, 255, 255, 0.550000011920929);
+  --Components/Navs & Tabs/Dark - Link Hovered: rgba(255, 255, 255, 0.75);
+  --Components/Navs & Tabs/Dark - Link Active: rgba(255, 255, 255, 1);
+  --Components/Navs & Tabs/Dark - Link Disabled: rgba(255, 255, 255, 0.25);
+  --Components/Navs & Tabs/Dark - Toggle Border: rgba(255, 255, 255, 0.10000000149011612);
+  --Components/Navs & Tabs/Navs/Underline/Item Default: rgba(13, 110, 253, 1);
+  --Components/Navs & Tabs/Navs/Underline/Item Hovered: rgba(10, 88, 202, 1);
+  --Components/Navs & Tabs/Navs/Underline/Item Active: rgba(0, 0, 0, 1);
+  --Components/Navs & Tabs/Navs/Underline/Item Disabled: rgba(33, 37, 41, 0.7490196228027344);
+  --Components/Offcanvas/Border: rgba(0, 0, 0, 0.1764705926179886);
+  --Components/Popover/Border: rgba(0, 0, 0, 0.20000000298023224);
+  --Components/Popover/Header Background: rgba(240, 240, 240, 1);
+  --Components/Toasts/Background: rgba(255, 255, 255, 0.8500000238418579);
+  --Components/Toasts/Border: rgba(0, 0, 0, 0.10000000149011612);
+  --Components/Toasts/Header Border: rgba(0, 0, 0, 0.05000000074505806);
+  --Components/Input/Focus Border: rgba(134, 183, 254, 1);
+  --Components/Range/Slider Background: rgba(222, 226, 230, 1);
+  --Components/Tables/Border - Dark: rgba(55, 59, 62, 1);
+  --text-rgb-36-36-36: rgba(36, 36, 36, 1);
+  --text-rgb-255-64-0: rgba(255, 64, 0, 1);
+  --text-white: rgba(255, 255, 255, 1);
+  --text-rgb-33-37-41: rgba(33, 37, 41, 1);
+  --text-rgb-108-117-125: rgba(108, 117, 125, 1);
+  --text-black: rgba(0, 0, 0, 1);
+}
+
+.text-rgb-36-36-36 {
+  color: var(--text-rgb-36-36-36);
+}
+
+.text-rgb-255-64-0 {
+  color: var(--text-rgb-255-64-0);
+}
+
+.text-white {
+  color: var(--text-white);
+}
+
+.text-rgb-33-37-41 {
+  color: var(--text-rgb-33-37-41);
+}
+
+.text-rgb-108-117-125 {
+  color: var(--text-rgb-108-117-125);
+}
+
+.text-black {
+  color: var(--text-black);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prototype Links */
+a.prototype-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+.rectangle-2-2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.compname-1-3 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.image-1-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.rectangle-1-5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 60px;
+}
+
+.body-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-36-36-36);
+}
+
+.text-10 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 128px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-64-0);
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 128px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 128px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-64-0);
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 128px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 128px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-64-0);
+}
+
+.vector-1-11 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.vector-3-12 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.vector-2-13 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.vector-4-14 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.ellipse-2-15 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.ellipse-3-16 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.ellipse-4-17 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.heading-h5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-64-0);
+}
+
+.size-medium-type-primary-outline-false-state-norma {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px 6px 12px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 8.75%;
+  background-color: var(--HitBox);
+  border-radius: 30px;
+}
+
+.rectangle-10-24 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.body-small {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-64-0);
+}
+
+.home-1 {
+@media (max-width: 1440px) {
+  .home-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-1 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.rectangle-2-28 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.compname-2-29 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.rectangle-3-30 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 60px;
+}
+
+.rectangle-6-37 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.heading-h2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-64-0);
+}
+
+.validation-normal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 16px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--HitBox);
+}
+
+._ignore-47 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+._ignore-48 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.node-46 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 172px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.body-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-33-37-41);
+}
+
+.hierarchy-primary-link-hover-false-fill-container- {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--HitBox);
+}
+
+.label-49 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 90.52641545663734%;
+  background-color: var(--HitBox);
+}
+
+.wrapper-45 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6px 16px 6px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--HitBox);
+  border: 1px solid var(--HitBox);
+}
+
+.label-wrapper-44 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 1.4680308772886312e-15%;
+}
+
+.body-lead {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-108-117-125);
+}
+
+.placeholder-55 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 89.27444794952682%;
+}
+
+.validation-normal-size-large-state-normal-filled-f {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.size-large-state-normal-filled-false-prefix-false- {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+  background-color: var(--HitBox);
+  border-radius: 8px;
+}
+
+.input-wrapper-52 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  min-height: 38px;
+}
+
+.item-wrapper-43 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+._ignore-62 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+._ignore-63 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.node-61 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 172px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.label-64 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 90.52641545663734%;
+  background-color: var(--HitBox);
+}
+
+.wrapper-60 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6px 16px 6px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--HitBox);
+  border: 1px solid var(--HitBox);
+}
+
+.label-wrapper-59 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 1.4680308772886312e-15%;
+}
+
+.placeholder-70 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 89.27444794952682%;
+}
+
+.input-wrapper-67 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  min-height: 38px;
+}
+
+.item-wrapper-58 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.field-wrapper-40 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0px 190px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.body-lead {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.size-large-type-primary-outline-false-state-normal {
+@media (max-width: 1440px) {
+  .size-large-type-primary-outline-false-state-normal {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .size-large-type-primary-outline-false-state-normal {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+}
+
+.size-large-items-1 {
+@media (max-width: 1440px) {
+  .size-large-items-1 {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .size-large-items-1 {
+    gap: 16px;
+  }
+}
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+  background-color: var(--HitBox);
+}
+
+.layout-horizontal-size-large-items-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 39.640344018764665%;
+}
+
+.rectangle-7-76 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.body-small {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.rectangle-8-78 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.rectangle-9-79 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.display-h6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-64-0);
+}
+
+.vector-3-81 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid var(--Accent);
+  border: none;
+  outline: none;
+}
+
+.vector-4-82 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid var(--Accent);
+  border: none;
+  outline: none;
+}
+
+.body-small {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.body-small {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: right;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.display-h6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: right;
+  font-family: var(--font-family-strelka);
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 120.00000476837158%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-64-0);
+}
+
+.vector-5-87 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid var(--Accent);
+  width: 100%;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+.vector-6-88 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid var(--Accent);
+  width: 100%;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+.image-10-89 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.image-11-90 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.new-27 {
+@media (max-width: 1440px) {
+  .new-27 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-27 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.rectangle-2-92 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.compname-2-93 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.rectangle-4-94 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 60px;
+}
+
+.image-3-101 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.image-4-102 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.image-5-103 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.image-6-104 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.image-9-105 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.ellipse-2-106 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.ellipse-3-107 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.ellipse-4-108 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.vector-3-109 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.vector-4-110 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.vector-1-111 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.vector-2-112 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.image-8-113 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.image-7-114 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-91 {
+@media (max-width: 1440px) {
+  .gallery-91 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-91 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
